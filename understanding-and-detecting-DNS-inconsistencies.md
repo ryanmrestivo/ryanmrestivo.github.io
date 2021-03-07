@@ -1,5 +1,4 @@
 Understanding and Detecting DNS inconsistencies.
-Ryan Restivo
 
 Computers don’t understand what a “domain” is, but they do understand the IP.  DNS helps computers locate resources.  Basically – DNS translates domain names to IP addresses.  DNS servers do this translation and can reside inside an enterprise network, as well as out in the wild (internet service providers, other organizations, malicious actors, etc).
 DNS uses both UDP and TCP on port 53 for communications. 
