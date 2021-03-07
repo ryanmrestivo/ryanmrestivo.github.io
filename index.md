@@ -4,6 +4,8 @@
 
 ### What I'm up to
 
+[Understanding and Detecting DNS Inconsistencies](/understanding-and-detecting-DNS-inconsistencies)
+
 [CISSP Tips](/CISSP-Tips)
 
 [Cyber Security Lexicon](/lexicon)
