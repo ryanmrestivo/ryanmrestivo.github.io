@@ -11,18 +11,19 @@ Quick wins:
 Baseline (Traffic Analysis)
 If host A normally does 200 DNS requests per day and all of a sudden this number goes up to 600 we can pull the data to understand what IP/location is making the requests. 
 
-/images/baseline-traffic-analysis.png
+<img src="/images/baseline-traffic-analysis.png?raw=true"/> 
 
 This graph shows Splunk traffic with a large spike in DNS traffic.
 
-/images/splunk-dns-traffic.png
+<img src="/images/splunk-dns-traffic.png?raw=true"/> 
+
 
 This chart shows varying requests and their count.  Is it normal to see large spikes in DNS requests in off-hours?
 Statistical techniques (Payload Analysis)
 Look at DNS requests for unusual data being sent/sent back.  Varying payload sizes ( > 512 bytes?)
 Is there additional data in the requests?  Example:  examplesite.com/oddURI/lookslikeapassword/maybethispartisinbase64/etc
 
-/images/payload-analysis.png
+<img src="/images/payload-analysis.png?raw=true"/> 
 
 Bonus things to look for:
 •	Increase in volume of requests by the client (indicating C&C or data movement)
@@ -31,7 +32,6 @@ Bonus things to look for:
 •	Variability in the frequency of requests (Beaconing activity to C&C)
 •	Randomness in domain names (DGA)
 	https://www.splunk.com/en_us/blog/tips-and-tricks/you-can-t-hyde-from-dr-levenshtein-when-you-use-url-toolbox.html
-	
 •	Substitution of domains to very slightly altered domains (typo-squatting)
 
 Top 10 Clients by Volume of Requests
