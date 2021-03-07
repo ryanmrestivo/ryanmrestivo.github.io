@@ -6,16 +6,22 @@ DNS uses both UDP and TCP on port 53 for communications.
 TCP will be used for payloads over 512 bytes and for zone transfers. 
 DNS uses a hierarchical system to determine the correct IP address for a domain.
 When data exfiltration occurs-- attackers want to hide their data transfer in the noise of all the other DNS requests.  It is uncommon to see DNS requests with more than 512 bytes using TCP, because it would be much easier to detect those.
+
 Quick wins:
 Baseline (Traffic Analysis)
 If host A normally does 200 DNS requests per day and all of a sudden this number goes up to 600 we can pull the data to understand what IP/location is making the requests. 
+
 /images/baseline-traffic-analysis.png
+
 This graph shows Splunk traffic with a large spike in DNS traffic.
+
 /images/splunk-dns-traffic.png
+
 This chart shows varying requests and their count.  Is it normal to see large spikes in DNS requests in off-hours?
 Statistical techniques (Payload Analysis)
 Look at DNS requests for unusual data being sent/sent back.  Varying payload sizes ( > 512 bytes?)
 Is there additional data in the requests?  Example:  examplesite.com/oddURI/lookslikeapassword/maybethispartisinbase64/etc
+
 /images/payload-analysis.png
 
 Bonus things to look for:
