@@ -72,7 +72,7 @@ Most important thing here is remember strength from weakest to strongest. No cle
 ## Cloud Computing Operating Model
 IaaS, PaaS, SaaS - [Remember Pizza as a Service](https://medium.com/@pkerrison/pizza-as-a-service-2-0-5085cd4c365e)
 
-# Domain 7: Security operations
+
 ## Fire Classes and Extinguisher Types
 
 |Type |Mneumonic    |Description                  |
@@ -83,7 +83,6 @@ IaaS, PaaS, SaaS - [Remember Pizza as a Service](https://medium.com/@pkerrison/p
 |D    |Dent         |Combustible metals           |
 |K    |Kitchen      |Oils and fats                |
 
-# Domain 8: Software Development Security
 ## Ring computing model
 
 Remember "Zero KODU"
