@@ -37,36 +37,36 @@ Top 10 Clients by Volume of Requests
 tag=dns message_type="Query" 
 | timechart span=1h limit=10 usenull=f useother=f count AS Requests by src
 
-Packet Size & Volume Distribution
-tag=dns message_type="QUERY"
-| mvexpand query
-| eval queryLength=len(query)
-| stats count by queryLength, src
-| sort -queryLength, count
-| table src queryLength count
-| head 1000
+Packet Size & Volume Distribution  
+tag=dns message_type="QUERY"  
+  | mvexpand query  
+  | eval queryLength=len(query)  
+  | stats count by queryLength, src  
+  | sort -queryLength, count  
+  | table src queryLength count  
+  | head 1000  
 
-Beaconing Activity
-tag=dns message_type="QUERY"
-| fields _time, query
-| streamstats current=f last(_time) as last_time by query
-| eval gap=last_time - _time
-| stats count avg(gap) AS AverageBeaconTime var(gap) AS VarianceBeaconTime BY query
-| eval AverageBeaconTime=round(AverageBeaconTime,3), VarianceBeaconTime=round(VarianceBeaconTime,3)
-| sort -count
-| where VarianceBeaconTime < 60 AND count > 2 AND AverageBeaconTime>1.000
-| table  query VarianceBeaconTime  count AverageBeaconTime
+Beaconing Activity  
+tag=dns message_type="QUERY"  
+  | fields _time, query  
+  | streamstats current=f last(_time) as last_time by query  
+  | eval gap=last_time - _time  
+  | stats count avg(gap) AS AverageBeaconTime var(gap) AS VarianceBeaconTime BY query  
+  | eval AverageBeaconTime=round(AverageBeaconTime,3), VarianceBeaconTime=round(VarianceBeaconTime,3)  
+  | sort -count  
+  | where VarianceBeaconTime < 60 AND count > 2 AND AverageBeaconTime>1.000  
+  | table  query VarianceBeaconTime  count AverageBeaconTime  
 
 
-Number of Hosts Talking to Beaconing Domains
-tag=dns message_type="QUERY"
-| fields _time, src, query
-| streamstats current=f last(_time) as last_time by query
-| eval gap=last_time - _time
-| stats count dc(src) AS NumHosts avg(gap) AS AverageBeaconTime var(gap) AS VarianceBeaconTime BY query
-| eval AverageBeaconTime=round(AverageBeaconTime,3), VarianceBeaconTime=round(VarianceBeaconTime,3)
-| sort –count
-| where VarianceBeaconTime < 60 AND AverageBeaconTime > 0
+Number of Hosts Talking to Beaconing Domains  
+tag=dns message_type="QUERY"  
+  | fields _time, src, query  
+  | streamstats current=f last(_time) as last_time by query  
+  | eval gap=last_time - _time  
+  | stats count dc(src) AS NumHosts avg(gap) AS AverageBeaconTime var(gap) AS VarianceBeaconTime BY query  
+  | eval AverageBeaconTime=round(AverageBeaconTime,3), VarianceBeaconTime=round(VarianceBeaconTime,3)  
+  | sort –count  
+  | where VarianceBeaconTime < 60 AND AverageBeaconTime > 0  
 
 
 Domains with Lots of Sub-Domains
@@ -76,14 +76,14 @@ tag=dns message_type="QUERY"
   | stats dc(ut_subdomain) AS HostsPerDomain BY ut_domain  
   | sort -HostsPerDomain  
 
-DNS queries to randomized subdomains
-sourcetype=stream:dns host=<host name> record_type=A
-|table query{}
-|lookup ut_parse_extended_lookup url AS query{}
-|search ut_domain!=None NOT (ut_domain_without_tld=microsoft OR ut_domain_without_tld=msn OR ut_domain_without_tld=windows.com OR ut_domain_without_tld=qwest.net)
-|`ut_shannon(ut_subdomain)`
-|stats count BY query{} ut_subdomain ut_domain ut_domain_without_tld ut_tld ut_shannon
-|sort - ut_shannon
+DNS queries to randomized subdomains  
+sourcetype=stream:dns host=<host name> record_type=A  
+  |table query{}  
+  |lookup ut_parse_extended_lookup url AS query{}  
+  |search ut_domain!=None NOT (ut_domain_without_tld=microsoft OR ut_domain_without_tld=msn OR ut_domain_without_tld=windows.com OR ut_domain_without_tld=example.net)  
+  |`ut_shannon(ut_subdomain)`  
+  |stats count BY query{} ut_subdomain ut_domain ut_domain_without_tld ut_tld ut_name  
+  |sort - ut_name  
 
 
 Search explanation
