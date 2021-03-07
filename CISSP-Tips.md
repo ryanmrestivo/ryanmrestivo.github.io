@@ -74,6 +74,7 @@ IaaS, PaaS, SaaS - [Remember Pizza as a Service](https://medium.com/@pkerrison/p
 
 # Domain 7: Security operations
 ## Fire Classes and Extinguisher Types
+
 |Type |Mneumonic    |Description                  |
 |-----|-------------|-----------------------------|
 |A    |Ash          |Ordinary solid combustibles  |
