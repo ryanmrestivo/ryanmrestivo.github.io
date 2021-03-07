@@ -4,7 +4,7 @@
 
 ### What I'm up to
 
-[Project 1 Title](/sample_page)
+[Project 1 Title](/lexicon)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
