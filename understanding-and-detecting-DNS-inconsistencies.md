@@ -81,7 +81,7 @@ sourcetype=stream:dns host=<host name> record_type=A
   |table query{}  
   |lookup ut_parse_extended_lookup url AS query{}  
   |search ut_domain!=None NOT (ut_domain_without_tld=microsoft OR ut_domain_without_tld=msn OR ut_domain_without_tld=windows.com OR ut_domain_without_tld=example.net)  
-  |`ut_shannon(ut_subdomain)`  
+  |`ut_name(ut_subdomain)`  
   |stats count BY query{} ut_subdomain ut_domain ut_domain_without_tld ut_tld ut_name  
   |sort - ut_name  
 
