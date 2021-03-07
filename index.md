@@ -4,7 +4,9 @@
 
 ### What I'm up to
 
-[Project 1 Title](/lexicon)
+[CISSP Tips](/CISSP-Tips)
+
+[Cyber Security Lexicon](/lexicon)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
