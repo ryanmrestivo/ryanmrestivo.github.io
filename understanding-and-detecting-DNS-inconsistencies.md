@@ -70,11 +70,11 @@ tag=dns message_type="QUERY"
 
 
 Domains with Lots of Sub-Domains
-tag=dns message_type="QUERY"
- | eval list="mozilla"
- | `ut_parse_extended(query, list)`
- | stats dc(ut_subdomain) AS HostsPerDomain BY ut_domain
- | sort -HostsPerDomain
+tag=dns message_type="QUERY"  
+  | eval list="mozilla"  
+  | `ut_parse_extended(query, list)`  
+  | stats dc(ut_subdomain) AS HostsPerDomain BY ut_domain  
+  | sort -HostsPerDomain  
 
 DNS queries to randomized subdomains
 sourcetype=stream:dns host=<host name> record_type=A
