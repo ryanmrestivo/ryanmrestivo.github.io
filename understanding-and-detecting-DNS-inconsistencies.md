@@ -85,18 +85,15 @@ sourcetype=stream:dns host=<host name> record_type=A
 |stats count BY query{} ut_subdomain ut_domain ut_domain_without_tld ut_tld ut_shannon
 |sort - ut_shannon
 
+
 Search explanation
-Splunk Search	Explanation
-sourcetype=stream:dns	Search only Stream DNS data.
-host=<host name> 	Search data from a specified host only.
- 
-record_type=A	Search only DNS A records, which return IPv4 addresses.
-|table query{}	Display the results in a table with the query{} column.
-|lookup ut_parse_extended_lookup url AS query{}	Look up URLs in the ut_parse_extended_lookup file and display them in the query{} field.
-|search ut_domain!=None NOT (ut_domain_without_tld=microsoft OR ut_domain_without_tld=msn OR ut_domain_without_tld=windows.com OR ut_domain_without_tld=qwest.net)	Filter out domains without a top level domain and that match the common ones listed.
-|`ut_shannon(ut_subdomain)`	Calculate the entropy score for only the subdomain.
-Note: The punctuation surrounding a Splunk macro is always a back tick (`), not a single quote (').
-|stats count BY query{} ut_subdomain ut_domain ut_domain_without_tld ut_tld ut_shannon	Calculate the number of times each URL appears in the search results and display the count, along with all the parsed fields from the URL and the Shannon entropy score for the subdomain.
-|sort - ut_shannon	Sort the table with the highest entropy score first.
+___________________________________________________________________________________
+|Splunk Search           |Explanation                        			  |
+|---   	                 |---                                		          |
+|sourcetype=stream:dns   |Search only Stream DNS data.         	   	          |
+|host=<host name> 	 |Search data from a specified host only.		  |
+|record_type=A		 |Search only DNS A records, which return IPv4 addresses. |
+|table query{}	         |Display the results in a table with the query{} column. |	
+___________________________________________________________________________________
 
 	
