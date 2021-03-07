@@ -8,12 +8,12 @@
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
-[Project 2 Title](/pdf/sample_presentation.pdf)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+[Project 2 Title](/pdf/CapstoneProject-Evans-Meek-Restivo.pdf)
+<img src="images/CapstoneProject-Evans-Meek-Restivo-thumbnail.png?raw=true"/>
 
 ---
-[Project 3 Title](http://example.com/)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+[Project 3 Title](/pdf/Arctic-Circle.pdf)
+<img src="images/Arctic-Circle-thumbnail.png?raw=true"/>
 
 ---
 
