@@ -18,11 +18,13 @@ Security testing that involves direct interaction with a target, such as sending
 Security commensurate with the risk and magnitude of the harm resulting from the loss, misuse, or unauthorized access to, or modification of information. This includes assuring that systems and applications used by owner operate effectively and provide appropriate confidentiality, integrity, and availability through the use of cost-effective management, personnel, operational, and technical controls. 
 
 # advanced persistent threats (APT): 
-An adversary that possesses sophisticated levels of expertise and significant resources that allow it to create opportunities to achieve its objectives by using multiple attack vectors (e.g., cyber, physical, and deception). These objectives typically include establishing and extending footholds within the information technology infrastructure of the targeted organizations for purposes of exfiltrating information, undermining or impeding critical aspects of a mission, program, or organization; or positioning itself to carry out these objectives in the future. 
+An adversary that possesses sophisticated levels of expertise and significant resources that allow it to create opportunities to achieve its objectives by using multiple attack vectors (e.g., cyber, physical, and deception). These objectives typically include establishing and extending footholds within the information technology infrastructure of the targeted organizations for purposes of exfiltrating information, undermining or impeding critical aspects of a mission, program, or organization; or positioning itself to carry out these objectives in the future.
+
 The advanced persistent threat 
-  (1) pursues its objectives repeatedly over an extended period of time; 
-  (2) adapts to defenders’ efforts to resist it; and
-  (3) is determined to maintain the level of interaction needed to execute its objectives.
+   (1) pursues its objectives repeatedly over an extended period of time; 
+   (2) adapts to defenders’ efforts to resist it; and
+   (3) is determined to maintain the level of interaction needed to execute its objectives.
+   
 An unauthorized person gains undetected access to a system and stays for a long period of time. The intent is to steal data. A persistent presence is sometimes called consolidation. APTs can wait a long time before becoming active. By performing a gap analysis of the network configuration, hidden APTs can be made to show themselves
 either by detection methods or making them become visible by exposing themselves through their designed behavior.
 
@@ -51,11 +53,6 @@ A minimum starting point used for comparisons. Hardware, software, databases, an
 # baseline configuration:
 A set of specifications for a system, or configuration item (CI) within a system, that has been formally reviewed and agreed on at a given point in time, and which can be changed only through change control procedures. The baseline configuration is used as a basis for future builds, releases, and/or changes.
 
-# blue Team:
-The group responsible for defending an enterprise’s use of information systems by maintaining its security posture against a group of mock attackers (i.e., the Red Team). Typically, the Blue Team and
-its supporters must defend against real or simulated attacks (1) over a significant period of time, (2) in
-a representative operational context (e.g., as part of an operational exercise), and (3) according to rules established and monitored with the help of a neutral group refereeing the simulation or exercise (i.e., the White Team).
-
 # boundary protection:
 Monitoring and control of communications at the external boundary of an information system to prevent and detect malicious and other unauthorized communication, through the use of boundary protection devices (e.g., proxies, gateways, routers, firewalls, guards, encrypted tunnels). 
 
@@ -71,7 +68,7 @@ pooling, rapid elasticity, and measured service); three service delivery models 
 A dictionary of common names for publicly known information system vulnerabilities.
 
 # computer network defense analysis:
-In cybersecurity work, a person that uses defensive measures and information collected from a variety of sources to identify, analyze, and report events that occur or might occur within the network in order to protect information, building control systems, and networks from threats.  SOURCE: NICCS
+In cybersecurity work, a person that uses defensive measures and information collected from a variety of sources to identify, analyze, and report events that occur or might occur within the network in order to protect information, building control systems, and networks from threats.
 
 # computer security incident response team (CSIRT):
 A capability set up for the purpose of assisting in responding to computer security-related incidents; also called a Computer Incident Response Team (CIRT) or a CIRC (Computer Incident Response Center, Computer Incident Response Capability). This is a team providing services to a defined constituency. There are several acronyms used to describe teams providing similar types of services (e.g., CSIRC, CSRC, CIRC, CIRT, IHT, IRC, IRT, SERT, and SIRT). The generic term “CSIRT” has been widely adopted in the computer security community.
@@ -87,8 +84,8 @@ A predetermined set of instructions or procedures that describe how an organizat
 
 # countermeasure:
 Any action, device, procedure, technique, or other measure that reduces the vulnerability of, or threat to a building control system. Reactive methods used to prevent an exploit from successfully occurring once a threat has been detected. Intrusion Prevention Systems (IPS) commonly employ countermeasures to prevent intruders form gaining further access to a computer network. Other countermeasures are patches, access control lists and malware filters.
-• 	Defensive countermeasures include actions to identify the source of hostile cyber activities protection/mitigation at the boundary (e.g., intrusion protection systems, preemptive blocks, blacklisting); hunting within networks (actively searching
-for insiders and other adversaries or malware); passive and active intelligence (including law enforcement) employed to detect cyber threats; and/or actions to temporarily isolate a system engaged in hostile cyber activities.
+
+• 	Defensive countermeasures include actions to identify the source of hostile cyber activities protection/mitigation at the boundary (e.g., intrusion protection systems, preemptive blocks, blacklisting); hunting within networks (actively searching for insiders and other adversaries or malware); passive and active intelligence (including law enforcement) employed to detect cyber threats; and/or actions to temporarily isolate a system engaged in hostile cyber activities.
 
 • 	Offensive countermeasures might include electronic jamming or other negation measures intended to disrupt an adversary’s cyber capabilities during employment.
 
@@ -109,8 +106,11 @@ Refers to the use of cyber-warfare techniques in order to conduct espionage. Cyb
 # common functionality of cyber-collection systems includes the following:
 
 • 	Data scan: local and network storage are scanned to find and copy files of interest, these are often documents, spreadsheets, design files such as AutoCAD files and system files such as the password file.
+
 • 	Capture location: GPS, Wi-Fi, network information and other attached sensors are used to determine the location and movement of the infiltrated device.
+
 • 	Bug: the device microphone can be activated in order to record audio. Likewise, audio streams intended for the local speakers can be intercepted at the device level and recorded.
+
 • 	Hidden Private Networks that bypass the corporate network security. A computer that is being spied upon can be plugged into a legitimate corporate network that is heavy monitored for malware activity and at same time belongs to a private Wi-Fi network outside of the company network that is leaking confidential information off of an employee’s computer. A computer like this is easily set up by a double-agent working in the IT department by install a second Wireless card in a computer and special software to remotely monitor an employee’s computer through this second interface card without them being aware of a side-band communication channel pulling information off of his computer.
 
 # cyber-exercise:
@@ -123,11 +123,16 @@ Actions taken through the use of computer networks that result in an actual or p
 There are several common ways to infect or access the target:
 
 • 	An injection proxy is a system that is placed upstream from the target individual or company, usually at the Internet Service Provider, that injects malware into the targets system. For example, an innocent download made by the user can be injected with the malware executable on the fly so that the target system then is accessible to hackers.
+
 • 	spear phishing: A carefully crafted e-mail is sent to the target in order to entice them to install the malware via a Trojan document or a drive by attack hosted on a web server compromised or controlled by the malware owner.
+
 • 	Surreptitious entry may be used to infect a system. In other words, the spies carefully break into the target’s office and install the malware on the target’s system.
+
 • 	An upstream monitor or sniffer is a device that can intercept and view the data transmitted by a target system. Usually this device is placed at the Internet Service Provider. The Carnivore system is a famous example of this type of system. Based on the same logic as a telephone intercept, this type of system is of limited use today due to the widespread use of encryption during data transmission.
+
 • 	A wireless infiltration system can be used in proximity of the target when the target is using wireless technology. This is usually a laptop-based system that impersonates a Wi-Fi or 3G base station to capture the target systems and relay requests upstream to the Internet. Once the target systems are on the network, the system then.
 functions as an injection proxy or as an upstream monitor in order to infiltrate or monitor the target system.
+
 • 	A USB Key preloaded with the malware infector may be given to or dropped at the target site.
 
 # cyber response plan:
