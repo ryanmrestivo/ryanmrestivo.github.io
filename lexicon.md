@@ -60,9 +60,22 @@ Monitoring and control of communications at the external boundary of an informat
 A method used to ensure accuracy of information in a disaster recovery plan and that it is current.
 
 # cloud computing:
-A model for enabling on-demand network access to a shared pool of configurable IT capabilities/ resources (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned, and released with minimal management effort or service provider interaction. It allows users to access technology-based services from the network cloud without knowledge of, expertise with, or control over the technology infrastructure that supports them. This cloud model is composed of five
-essential characteristics (on-demand self-service, ubiquitous network access, location independent resource
-pooling, rapid elasticity, and measured service); three service delivery models (Cloud Software as a Service [SaaS], Cloud Platform as a Service [PaaS], and Cloud Infrastructure as a Service [IaaS]); and four models for enterprise access (private cloud, community cloud, public cloud, and hybrid cloud).
+A model for enabling on-demand network access to a shared pool of configurable IT capabilities/ resources (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned, and released with minimal management effort or service provider interaction. It allows users to access technology-based services from the network cloud without knowledge of, expertise with, or control over the technology infrastructure that supports them. 
+The cloud model is composed of five essential characteristics:
+  •  on-demand self-service
+  •  ubiquitous network access
+  •  location independent resource pooling
+  •  rapid elasticity
+  •  measured service; 
+three service delivery models
+  •Cloud Software as a Service [SaaS],
+  •Cloud Platform as a Service [PaaS], 
+  •Cloud Infrastructure as a Service [IaaS];
+and four models for enterprise access:
+  •  private cloud
+  •  community cloud
+  •  public cloud
+  •  hybrid cloud
 
 # common vulnerabilities and exposures (CVE):
 A dictionary of common names for publicly known information system vulnerabilities.
@@ -212,7 +225,8 @@ Formal description and evaluation of the vulnerabilities in an information syste
 # vulnerability assessment & management:
 In cybersecurity work, a person that conducts assessments of threats and vulnerabilities, determines deviations from acceptable configurations, enterprise or local policy, assesses the level of risk, and develops and/or recommends appropriate mitigation countermeasures in operational and non-operational situations.
 
-# vulnerability stockpiling: The concept that rather than disclosing vulnerabilities to software makers so that they can be patched, a government might buy and then stockpile zero-days for possible use as an offensive weapon.
+# vulnerability stockpiling:
+The concept that rather than disclosing vulnerabilities to software makers so that they can be patched, a government might buy and then stockpile zero-days for possible use as an offensive weapon.
 
 # vulnerability testing:
 The intent of vulnerability testing is to identify potential problems with a building controls system. There are at least five types of vulnerability tests. Tests are conducted monthly, quarterly, or annually.
